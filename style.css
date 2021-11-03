@@ -92,12 +92,14 @@ header {
     min-width: 190px;
     background-color: var(--black-header);
     height: calc(100% - 70px);
+    position: relative;
 }
 
 header img {
     margin-top: 1em;
     width: 70%;
     margin-left: 1em;
+    max-width: 140px;
 }
 
 header ul {
@@ -137,6 +139,8 @@ header ul li:focus div {
     display: inline-block;
     background-color: var(--green-underline);
 }
+
+/*css playlist*/
 .playlist {
     margin-top: 1em;
     margin-left: 1em;
@@ -175,6 +179,51 @@ header ul li:focus div {
 .playlist ul li:hover {
     color: white;
 }
+/*fine css playlist*/
+
+/*inzio css playlist-footer*/
+.playlist-footer {
+    width: 80%;
+    position: absolute;
+    margin-left: 1em; 
+    margin-right: 1em;
+    bottom: 0;
+}
+
+.playlist-footer button {
+    background-color: transparent;
+    color: var(--grey-text);
+    border: none;
+    height: 2em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.playlist-footer button:first-child {
+    margin-left: 0.5em;
+}
+
+.playlist-footer button:last-child i {
+    vertical-align: middle;
+    font-size: 2em;
+}
+
+.playlist-footer button:last-child span {
+    color: white;
+    font-weight: 900;
+} 
+
+.playlist-footer button:first-child:hover {
+    color: white;
+}
+
+hr {
+    margin-bottom: 0.5em;
+    background-color: var(--grey-text); 
+    height: 1px; 
+    border: 0;
+}
+/*fine css playlist footer*/
 /*/header*/
 
 /*main*/
@@ -193,6 +242,6 @@ main {
     min-height: 70px;
     background-color: var(--black-nav-footer);
     position: fixed;
-    bottom: 0;
+    bottom: 0em;
 }
 /*/css nav-footer*/

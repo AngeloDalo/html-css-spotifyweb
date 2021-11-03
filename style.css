@@ -17,6 +17,8 @@ html {
     --black-header: #000000;
     --black-main: #141922;
     --grey: #a3a3a3;
+    --grey-text: #848484;
+    --text-hover: #d2d2d2;
 }
 
 .clearfix::after {
@@ -85,7 +87,7 @@ a.btn:hover {
 
 /*header*/
 header {
-    width: 15%;
+    min-width: 15%;
     background-color: var(--black-header);
     height: calc(100% - 70px);
 }
@@ -94,6 +96,45 @@ header img {
     margin-top: 1em;
     width: 70%;
     margin-left: 1em;
+}
+
+header ul {
+    list-style: none;
+    margin-top: 1em;
+}
+
+header ul li {
+    background-color: rgba(8,11,18,0.7);
+    margin-top: 0.5em;
+    height: 1.5em;
+}
+
+header ul li button {
+    background-color: var(--black-header);
+    color: var(--grey-text);
+    border: none;
+    cursor: pointer;
+    margin-left: 1em;
+    font-size: 1em;
+    vertical-align: super;
+}
+
+li div {
+    width: 5px;
+    height: 100%;
+    display: none;
+}
+
+header ul li button:hover,
+header ul li button:active,
+header ul li button:focus{
+    color: var(--text-hover);
+}
+
+header ul li:hover div,
+header ul li:focus div {
+    display: inline-block;
+    background-color: var(--green-underline);
 }
 /*/header*/
 

@@ -102,6 +102,7 @@ main {
     width: 85%;
     background-color: var(--black-main);
     height: calc(100% - 70px);
+    overflow: auto;
 }
 /*/main*/
 /*/css main/header*/

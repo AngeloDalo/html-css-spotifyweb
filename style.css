@@ -7,9 +7,9 @@
 html {
     font-size: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
 }
 
+/*css comuni*/
 :root{
     --green-underline: #adff2f;
     --black-background: #141922;
@@ -25,40 +25,57 @@ html {
     clear: both;
 }
 
-.container {
+.width-100 {
     width: 100%;
-    height: 100vh;
 }
 
+.height-100 {
+    height: 100%;
+}
+
+.height-90 {
+    height: 90%;
+}
+/*fine css comuni*/
+
+/*css container*/
+.container {
+    height: 100vh;
+}
+/*/css container*/
+
+
+/*css nav-header*/
 .nav-header {
-    width: 100%;
     height: 10%;
     background-color: rgba(8,11,18,0.7);
     position: fixed;
 }
+/*/css header*/
 
+
+/*css main/header*/
 .main-content {
     display: flex;
-    width: 100%;
-    height: 100%;
 }
 
 header {
     width: 15%;
-    height: 90%;
     background-color: var(--black-header);
 }
 
 main {  
     width: 85%;
-    height: 90%;
     background-color: var(--black-main);
 }
+/*/css main/header*/
 
+
+/*css-nav-footer*/
 .nav-footer {
-    width: 100%;
     height: 10%;
     background-color: var(--black-nav-footer);
     position: fixed;
     bottom: 0;
 }
+/*/css nav-footer*/

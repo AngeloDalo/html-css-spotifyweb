@@ -49,7 +49,7 @@ a.btn {
     font-weight: bold;
     color: white;
     padding: 10px 30px;
-    margin-right: 0.5em;
+    margin-right: 16.5em;
 }
 
 a.btn:hover {
@@ -67,16 +67,14 @@ a.btn:hover {
 
 /*css nav-header*/
 .nav-header {
-    width: 85%;
-    right: 0;
+    left: 190px;
     height: 70px;
     background-color: rgba(8,11,18,0.7);
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 50%;
-    z-index: 999;
+    z-index: 1000000;
 }
 /*/css header*/
 
@@ -235,6 +233,49 @@ main {
     overflow: auto;
 }
 /*/main*/
+
+/*nav-main*/
+.nav-main  {
+    margin-top: 6em;
+    margin-left: 20%;
+}
+
+.nav-main ul {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--grey-text);
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-main ul li {
+    display: inline-block;
+    margin-right: 1em;
+    width: 10em;
+}
+
+.nav-main ul li button {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: var(--grey-text);
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-main ul li button hr {
+    width: 2em;
+    margin-left: 40%;
+    height: 3px;
+    border: none;
+    display: none;
+    background-color: var(--green-underline);
+}
+
+.nav-main ul li button:hover hr{
+    display: block;
+}
+/*/nav-main*/
 /*/css main/header*/
 
 

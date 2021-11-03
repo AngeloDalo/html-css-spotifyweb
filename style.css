@@ -9,3 +9,56 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
+
+:root{
+    --green-underline: #adff2f;
+    --black-background: #141922;
+    --black-nav-footer: #282828;
+    --black-header: #000000;
+    --black-main: #141922;
+    --grey: #a3a3a3;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-header {
+    width: 100%;
+    height: 10%;
+    background-color: rgba(8,11,18,0.7);
+    position: fixed;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 15%;
+    height: 90%;
+    background-color: var(--black-header);
+}
+
+main {  
+    width: 85%;
+    height: 90%;
+    background-color: var(--black-main);
+}
+
+.nav-footer {
+    width: 100%;
+    height: 10%;
+    background-color: var(--black-nav-footer);
+    position: fixed;
+    bottom: 0;
+}

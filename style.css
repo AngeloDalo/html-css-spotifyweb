@@ -92,7 +92,6 @@ header {
     min-width: 190px;
     background-color: var(--black-header);
     height: calc(100% - 70px);
-    position: relative;
 }
 
 header img {
@@ -183,11 +182,13 @@ header ul li:focus div {
 
 /*inzio css playlist-footer*/
 .playlist-footer {
-    width: 80%;
-    position: absolute;
-    margin-left: 1em; 
-    margin-right: 1em;
-    bottom: 0;
+    height: 19%;
+    max-height: 10000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 1em;
 }
 
 .playlist-footer button {
@@ -217,11 +218,11 @@ header ul li:focus div {
     color: white;
 }
 
-hr {
+.playlist-footer div {
+    width: 80%;
+    height: 1px;
+    background-color: var(--grey-text);
     margin-bottom: 0.5em;
-    background-color: var(--grey-text); 
-    height: 1px; 
-    border: 0;
 }
 /*fine css playlist footer*/
 /*/header*/
@@ -243,5 +244,6 @@ main {
     background-color: var(--black-nav-footer);
     position: fixed;
     bottom: 0em;
+    z-index: 99999;
 }
 /*/css nav-footer*/

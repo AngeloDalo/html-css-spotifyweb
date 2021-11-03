@@ -36,6 +36,24 @@ html {
 .height-90 {
     height: 90%;
 }
+
+a.btn {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 2em;
+    font-size: 0.8em;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 0.5em;
+}
+
+a.btn:hover {
+    padding: 13px 35px;
+    font-size: 0.9em;
+}
 /*fine css comuni*/
 
 /*css container*/
@@ -47,9 +65,15 @@ html {
 
 /*css nav-header*/
 .nav-header {
-    height: 10%;
+    width: 85%;
+    right: 0;
+    height: 70px;
     background-color: rgba(8,11,18,0.7);
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 999;
 }
 /*/css header*/
 
@@ -59,21 +83,33 @@ html {
     display: flex;
 }
 
+/*header*/
 header {
     width: 15%;
     background-color: var(--black-header);
+    height: calc(100% - 70px);
 }
 
+header img {
+    margin-top: 1em;
+    width: 70%;
+    margin-left: 1em;
+}
+/*/header*/
+
+/*main*/
 main {  
     width: 85%;
     background-color: var(--black-main);
+    height: calc(100% - 70px);
 }
+/*/main*/
 /*/css main/header*/
 
 
 /*css-nav-footer*/
 .nav-footer {
-    height: 10%;
+    min-height: 70px;
     background-color: var(--black-nav-footer);
     position: fixed;
     bottom: 0;

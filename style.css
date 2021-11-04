@@ -479,6 +479,10 @@ main {
     cursor: pointer;
 }
 
+.nav-footer-dx ul li:hover button {
+    color: white;
+}
+
 .volume {
     width: 100px;
     height: 5px;
@@ -519,7 +523,15 @@ main {
     display: none;
 }
 
+.volume:hover .green-time-volume {
+    display: block;
+    cursor: pointer;
+}
 
+.volume:hover .pointer-volume {
+    display: block;
+    cursor: pointer;
+}
 
 /*/nav-footer-dx*/
 /*/css nav-footer*/

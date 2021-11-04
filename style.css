@@ -355,7 +355,6 @@ main {
 .nav-footer-cx .nav-footer-cx-bottom {
     height: 50%;
     width: 100%;
-    background-color: yellow;
 }
 
 .nav-footer-cx .nav-footer-cx-top ul {
@@ -393,11 +392,134 @@ main {
     margin: 0.10em 0.5em;
 }
 
+.nav-footer-cx-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.nav-footer-cx-bottom div {
+    width: 400px;
+    height: 2px;
+    background-color: var(--grey-text);
+    margin: 0.45em 1em 0em 1em;
+    position: relative;
+}
+
+.nav-footer-cx-bottom div .green-time-music {
+    position: absolute;
+    top: -0.45em;
+    left: -0.9em;
+    width: 200px;
+    height: 2px;
+    background-color: var(--green-underline);
+    z-index: 1;
+    display: none;
+}
+
+.nav-footer-cx-bottom div .grey-time-music {
+    position: absolute;
+    top: -0.45em;
+    left: -0.9em;
+    width: 200px;
+    height: 2px;
+    background-color: var(--grey);
+}
+
+.nav-footer-cx-bottom div .pointer-music {
+    position: absolute;
+    top: -0.85em;
+    left: 11em;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+}
+
+.nav-footer-cx-bottom div:hover .green-time-music {
+    display: block;
+    cursor: pointer;
+}
+
+.nav-footer-cx-bottom div:hover .pointer-music {
+    display: block;
+    cursor: pointer;
+}
+
+.nav-footer-cx-bottom span {
+    color: white;
+    font-weight: 600;
+    font-size: 0.8em;
+}
 /*/nav-footer-cs*/
 
+/*nav-footer-dx*/
 .nav-footer-dx {
     width: 20%;
-    background-color: crimson;
+    display: flex;
+    align-items: center;
 }
+
+.nav-footer-dx ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-footer-dx ul li {
+    margin-left: 1em;
+}
+
+.nav-footer-dx ul li button {
+    background-color: transparent;
+    border: none;
+    color: var(--grey-text);
+    cursor: pointer;
+}
+
+.volume {
+    width: 100px;
+    height: 5px;
+    background-color: var(--grey-text);
+    margin-left: 1em;
+    position: relative;
+}
+
+.volume .green-time-volume {
+    position: absolute;
+    top: -0.0em;
+    left: -0.0em;
+    width: 50px;
+    height: 5px;
+    background-color: var(--green-underline);
+    z-index: 1;
+    display: none;
+}
+
+.volume .grey-time-volume {
+    position: absolute;
+    top: -0.0em;
+    left: -0.0em;
+    width: 50px;
+    height: 5px;
+    background-color: var(--grey);
+}
+
+.volume .pointer-volume {
+    position: absolute;
+    top: -0.15em;
+    left: 2.5em;
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+}
+
+
+
+/*/nav-footer-dx*/
 /*/css nav-footer*/

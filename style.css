@@ -317,7 +317,6 @@ main {
 
 .nav-footer-sx-ico {
     line-height: 3.2em;
-    color: var(--grey-text);
 }
 
 .nav-footer-sx .nav-footer-sx-name:hover span {
@@ -332,12 +331,70 @@ main {
 .nav-footer-sx .nav-footer-sx-ico i:last-child:hover {
     color: white;
 }
+
+.nav-footer-sx .nav-footer-sx-ico button {
+    background-color: transparent;
+    border: none;
+    color: var(--grey-text);
+    font-size: 0.8em;
+}
 /*/nav-footer-sx*/
 
+/*nav-footer-cx*/
 .nav-footer-cx {
     width: 60%;
-    background-color: coral;
+    display: flex;
+    flex-direction: column;
 }
+
+.nav-footer-cx .nav-footer-cx-top {
+    height: 50%;
+    width: 100%;
+}
+
+.nav-footer-cx .nav-footer-cx-bottom {
+    height: 50%;
+    width: 100%;
+    background-color: yellow;
+}
+
+.nav-footer-cx .nav-footer-cx-top ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-footer-cx .nav-footer-cx-top ul li {
+    margin-left: 1em;
+    align-items: center;
+}
+
+.nav-footer-cx .nav-footer-cx-top li .normale {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.0em;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+
+.nav-footer-cx .nav-footer-cx-top li .play {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 0.13em 0.5em;
+}
+
+.nav-footer-cx .nav-footer-cx-top li .play:hover {
+    font-size: 1.8em;
+    margin: 0.10em 0.5em;
+}
+
+
+/*/nav-footer-cs*/
 
 .nav-footer-dx {
     width: 20%;

@@ -274,6 +274,62 @@ main {
     display: block;
 }
 /*/nav-main*/
+
+/*css main-song*/
+.main-song {
+    padding: 1em 0 1em 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-song div {
+    margin-bottom: 1em;
+}
+
+.main-song div h2 {
+    color: white;
+    margin-bottom: 1em;
+}
+
+.main-song div span {
+    color: var(--grey-text);
+    font-size: 0.8em;
+    margin-top: 2em;
+}
+
+/*css Recently-played*/
+.Recenti-album {
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+}
+
+.album {
+    width: 17%;
+    max-width: 200px;
+    height: 230px;
+    margin-right: 1em;
+}
+
+.album img {
+    width: 100%;
+}
+
+.album {
+    text-align: center;
+}
+
+.album h3 {
+    color:white;
+    font-size: 0.8em;
+}
+
+.album span {
+    font-size: 0.5em;
+}
+/*/css Recently-played*/
+/*/css main-song*/
 /*/css main/header*/
 
 

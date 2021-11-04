@@ -289,10 +289,50 @@ main {
     display: flex;
 }
 
+/*nav-footer-sx*/
 .nav-footer-sx {
+    display: flex;
+    justify-content: space-around;
     width: 20%;
-    background-color: chartreuse;
+    padding: 0.6em 1em 0.6em 1em;
+    text-align: center;
 }
+
+.nav-footer-sx img {
+    height: 100%;
+}
+
+.nav-footer-sx .nav-footer-sx-name {
+    font-size: 0.7em;
+    padding: 0.8em 0;
+}
+
+.nav-footer-sx .nav-footer-sx-name h1 {
+    color: white;
+}
+
+.nav-footer-sx .nav-footer-sx-name span {
+    color: var(--grey-text);
+}
+
+.nav-footer-sx-ico {
+    line-height: 3.2em;
+    color: var(--grey-text);
+}
+
+.nav-footer-sx .nav-footer-sx-name:hover span {
+    text-decoration: underline;
+    color: white;
+}
+
+.nav-footer-sx .nav-footer-sx-ico i:first-child:hover {
+    color: white;
+}
+
+.nav-footer-sx .nav-footer-sx-ico i:last-child:hover {
+    color: white;
+}
+/*/nav-footer-sx*/
 
 .nav-footer-cx {
     width: 60%;

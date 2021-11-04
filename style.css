@@ -316,8 +316,38 @@ main {
     width: 100%;
 }
 
+.album:hover img {
+    filter: grayscale(100%);
+    filter: opacity(0.3);
+    cursor: pointer;
+}
+
+.album:hover .play-button {
+    display: block;
+}
+
 .album {
     text-align: center;
+    position: relative;
+}
+
+.play-button {
+    top: 3em;
+    width: 100%;
+    height: 11em;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+.play-button button {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.play-button i {
+    font-size: 4em;
 }
 
 .album h3 {

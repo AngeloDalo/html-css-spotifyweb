@@ -289,7 +289,7 @@ main {
 
 .main-song div h2 {
     color: white;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .main-song div span {
@@ -359,6 +359,32 @@ main {
     font-size: 0.5em;
 }
 /*/css Recently-played*/
+
+/*css creato per*/
+.Creato-per-playlist {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+.Creato-per-playlist .list {
+    height: 230px;
+    width: 15.4%;
+    max-width: 200px;
+    margin-right: 1em;
+    text-align: center;
+}
+
+.Creato-per-playlist .list img {
+    width: 100%;
+}
+
+.list h3 {;
+    color:white;
+    font-size: 0.8em;
+}
+/*css main-song*/
 /*/css main-song*/
 /*/css main/header*/
 

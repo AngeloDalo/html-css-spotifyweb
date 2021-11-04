@@ -298,6 +298,7 @@ main {
     margin-top: 2em;
 }
 
+/*css main-song*/
 /*css Recently-played*/
 .Recenti-album {
     width: 100%;
@@ -414,8 +415,58 @@ main {
 .list:hover .playlist-button{
     display: block;
 }
+/*/creato per*/
+.Artisti-popolari {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
 
-/*css main-song*/
+.Artisti-popolari .artista {
+    height: 230px;
+    width: 15.4%;
+    max-width: 200px;
+    margin-right: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.Artisti-popolari .artista img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.artista:hover img {
+    filter: grayscale(100%);
+    filter: opacity(0.3);
+    cursor: pointer;
+}
+
+.artista-button {
+    top: 3.5em;
+    width: 100%;
+    height: 11em;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.artista-button button {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.artista-button button i {
+    font-size: 4em;
+}
+
+.artista:hover .artista-button{
+    display: block;
+}
+/*css popolari*/
+/*/css popolari*/
 /*/css main-song*/
 /*/css main/header*/
 

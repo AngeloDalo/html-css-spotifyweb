@@ -772,7 +772,31 @@ main {
 }
 
 @media screen and (max-width: 700px) {
+    .Recenti-album .album {
+        width: 45%;
+        margin-right: 1em;
+        margin-bottom: 4em;
+    }
 
+    .Creato-per-playlist .list {
+        width: 45%;
+        margin-right: 1em;
+    }
+
+    .Artisti-popolari .artista {
+        width: 45%;
+        margin-right: 1em;
+    }
+
+    .nav-main ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-main ul li {
+        margin-bottom: 2em;
+        margin-right: 0em;
+    }
 }
 
 @media screen and (max-width: 600px) {

@@ -49,7 +49,7 @@ a.btn {
     font-weight: bold;
     color: white;
     padding: 10px 30px;
-    margin-right: 16.5em;
+    margin-right: 5em;
 }
 
 a.btn:hover {
@@ -66,12 +66,12 @@ a.btn:hover {
 }
 /*/css container*/
 
-
 /*css nav-header*/
 .nav-header {
-    left: 190px;
-    width: 100%;
+    left: 200px;
+    right: 22px;
     height: 70px;
+    max-width: 1139px;
     background-color: rgba(8,11,18,0.7);
     position: fixed;
     display: flex;
@@ -91,8 +91,8 @@ a.btn:hover {
 
 /*header*/
 header {
-    width: 15%;
-    min-width: 190px;
+    min-width: 200px;
+    width: 200px;
     background-color: var(--black-header);
     height: calc(100% - 70px);
 }
@@ -102,6 +102,12 @@ header img {
     width: 70%;
     margin-left: 1em;
     max-width: 140px;
+}
+
+header .icona {
+    width: 25px;
+    filter: invert(1);
+    display: none;
 }
 
 header ul {
@@ -312,8 +318,8 @@ main {
 
 .album {
     width: 17%;
-    max-width: 200px;
-    height: 230px;
+    max-width: 280px;
+    height: 280px;
     margin-right: 1em;
 }
 
@@ -395,7 +401,7 @@ main {
 .Creato-per-playlist .list {
     height: 230px;
     width: 15.4%;
-    max-width: 200px;
+    max-width: 280px;
     margin-right: 1em;
     text-align: center;
     position: relative;
@@ -430,7 +436,7 @@ main {
 .Artisti-popolari .artista {
     height: 230px;
     width: 15.4%;
-    max-width: 200px;
+    max-width: 280px;
     margin-right: 1em;
     text-align: center;
     position: relative;
@@ -769,6 +775,10 @@ main {
         flex-direction: column;
         justify-content: center;
     }
+
+    .nav-header {
+        left: 200px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -797,9 +807,60 @@ main {
         margin-bottom: 2em;
         margin-right: 0em;
     }
-}
 
+    .nav-header {
+        left: 200px;
+    }
+}
 @media screen and (max-width: 600px) {
-    
+     .playlist {
+         display: none;
+     }
+
+     .playlist-footer button span {
+         display: none;
+     }
+
+     .playlist-footer div {
+         display: none;
+     }
+
+     .playlist-footer button {
+         display: block;
+     }
+
+     .home-list li button span {
+         display: none;
+     }
+
+     .home-list {
+         height: calc((100% - 130px));
+     }
+
+     header img {
+         display: none;
+     }
+
+     header .icona {
+         display: block;
+         margin-left: 0.8em;
+     }
+
+     header {
+         min-width: 50px;
+         width: 50px;
+     }
+
+     main {
+         width: calc(100% - 50px);
+     }
+
+    .nav-header {
+        left: 50px;
+     }
+
+     a.btn {
+         margin-right: 5em;
+     }
 }
 /*/media*/

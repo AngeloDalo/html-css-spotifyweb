@@ -489,6 +489,7 @@ main {
 
 /*nav-footer-sx*/
 .nav-footer-sx {
+    min-width: 144px;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -537,6 +538,7 @@ main {
 
 /*nav-footer-cx*/
 .nav-footer-cx {
+    min-width: 418px;
     height: 100%;
     width: 60%;
     display: flex;
@@ -598,7 +600,7 @@ main {
 }
 
 .nav-footer-cx-bottom div {
-    width: 400px;
+    width: 300px;
     height: 2px;
     background-color: var(--grey-text);
     margin: 0.45em 1em 0em 1em;
@@ -656,6 +658,7 @@ main {
 
 /*nav-footer-dx*/
 .nav-footer-dx {
+    min-width: 144px;
     height: 100%;
     width: 20%;
     display: flex;
@@ -669,7 +672,7 @@ main {
 }
 
 .nav-footer-dx ul li {
-    margin-left: 1em;
+    margin-right: 0.5em;
 }
 
 .nav-footer-dx ul li button {
@@ -684,10 +687,9 @@ main {
 }
 
 .volume {
-    width: 100px;
+    width: 5em;
     height: 5px;
     background-color: var(--grey-text);
-    margin-left: 1em;
     position: relative;
 }
 
@@ -770,7 +772,7 @@ main {
 }
 
 @media screen and (max-width: 700px) {
-    
+
 }
 
 @media screen and (max-width: 600px) {

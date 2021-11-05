@@ -62,6 +62,7 @@ a.btn:hover {
 .container {
     height: 100vh;
     overflow: hidden;
+    width: 100%;
 }
 /*/css container*/
 
@@ -69,6 +70,7 @@ a.btn:hover {
 /*css nav-header*/
 .nav-header {
     left: 190px;
+    width: 100%;
     height: 70px;
     background-color: rgba(8,11,18,0.7);
     position: fixed;
@@ -83,6 +85,8 @@ a.btn:hover {
 /*css main/header*/
 .main-content {
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 /*header*/
@@ -143,6 +147,7 @@ header ul li:focus div {
     margin-left: 1em;
     overflow: auto;
     height: calc(100% - 260px);
+    width: 100%;
 }
 
 .playlist span {
@@ -182,6 +187,7 @@ header ul li:focus div {
     height: 70px;
     overflow: hidden;
     margin-left: 1em;
+    width: 100%;
 }
 
 .playlist-footer button {
@@ -277,6 +283,7 @@ main {
     padding: 1em 0 1em 1em;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .main-song div {
@@ -296,9 +303,11 @@ main {
 
 /*css main-song*/
 /*css Recently-played*/
+
 .Recenti-album {
     display: flex;    
     flex-direction: row;
+    width: 100%;
 }
 
 .album {
@@ -358,6 +367,7 @@ main {
 
 /*css creato per*/
 .Creato-per-playlist {
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 2em;
@@ -411,6 +421,7 @@ main {
 }
 /*/creato per*/
 .Artisti-popolari {
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 2em;
@@ -466,6 +477,7 @@ main {
 
 /*css-nav-footer*/
 .nav-footer {
+    width: 100%;
     height: 70px;
     min-height: 70px;
     background-color: var(--black-nav-footer);
@@ -477,6 +489,7 @@ main {
 
 /*nav-footer-sx*/
 .nav-footer-sx {
+    height: 100%;
     display: flex;
     justify-content: space-around;
     width: 20%;
@@ -524,9 +537,14 @@ main {
 
 /*nav-footer-cx*/
 .nav-footer-cx {
+    height: 100%;
     width: 60%;
     display: flex;
     flex-direction: column;
+}
+
+.nav-footer-cx-top {
+    width: 100%;
 }
 
 .nav-footer-cx .nav-footer-cx-top {
@@ -573,6 +591,7 @@ main {
 }
 
 .nav-footer-cx-bottom {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -637,6 +656,7 @@ main {
 
 /*nav-footer-dx*/
 .nav-footer-dx {
+    height: 100%;
     width: 20%;
     display: flex;
     align-items: center;
@@ -715,3 +735,45 @@ main {
 
 /*/nav-footer-dx*/
 /*/css nav-footer*/
+
+/*media*/
+@media screen and (max-width: 1100px) {
+    .Recenti-album {  
+        flex-wrap: wrap;
+    }
+
+    .Recenti-album .album {
+        margin-right: 2em;
+    }
+
+    .nav-main {
+        margin-left: 1em;
+    }
+
+    .nav-main ul {
+        justify-content: space-between;
+    }
+
+    .Creato-per-playlist .list {
+        margin-right: 2em;
+    }
+
+    .Artisti-popolari .artista {
+        margin-right: 2em;
+    }
+
+    .nav-footer-sx-ico {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+/*/media*/

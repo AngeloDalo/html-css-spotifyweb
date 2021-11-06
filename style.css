@@ -72,7 +72,7 @@ a.btn:hover {
     left: 200px;
     right: 22px;
     height: 70px;
-    max-width: 1139px;
+    max-width: 2154px;
     background-color: rgba(8,11,18,0.7);
     position: fixed;
     display: flex;
@@ -320,7 +320,7 @@ main {
 
 .album {
     width: 17%;
-    max-width: 280px;
+    max-width: 174px;
     height: 280px;
     margin-right: 1em;
 }
@@ -347,7 +347,6 @@ main {
 .play-button {
     top: 3em;
     width: 100%;
-    height: 11em;
     position: absolute;
     display: none;
     cursor: pointer;
@@ -403,7 +402,7 @@ main {
 .Creato-per-playlist .list {
     height: 230px;
     width: 15.4%;
-    max-width: 280px;
+    max-width: 174px;
     margin-right: 1em;
     text-align: center;
     position: relative;
@@ -438,7 +437,7 @@ main {
 .Artisti-popolari .artista {
     height: 230px;
     width: 15.4%;
-    max-width: 280px;
+    max-width: 174px;
     margin-right: 1em;
     text-align: center;
     position: relative;
@@ -767,10 +766,12 @@ main {
 
     .Creato-per-playlist .list {
         margin-right: 2em;
+        width: 17%;
     }
 
     .Artisti-popolari .artista {
         margin-right: 2em;
+        width: 17%;
     }
 
     .nav-footer-sx-ico {
@@ -781,6 +782,49 @@ main {
 
     .nav-header {
         left: 200px;
+    }
+}
+
+@media screen and (max-width: 961px) {
+
+    .play-button {
+        top: 2em;
+    }
+
+    .playlist-button {
+        top: 2em;
+    }
+
+    .artista-button {
+        top: 2.2em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .play-button {
+        top: 2em;
+    }
+
+    .playlist-button {
+        top: 2em;
+    }
+
+    .artista-button {
+        top: 2.2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .play-button {
+        top: 1em;
+    }
+
+    .playlist-button {
+        top: 1em;
+    }
+
+    .artista-button {
+        top: 1.2em;
     }
 }
 
@@ -886,16 +930,16 @@ main {
          margin-right: 5em;
      }
 
-     .play-button {
-        top: 5em;
+    .play-button {
+        top: 3em;
     }
 
     .playlist-button {
-        top: 5em;
+        top: 3em;
     }
 
     .artista-button {
-        top: 5.2em;
+        top: 3em;
     }
 }
 /*/media*/
